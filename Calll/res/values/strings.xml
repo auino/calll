@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- Main stuffs -->
+
+<string name="settings_text">Settings</string>
+<string name="set_preferences">Calll preferences</string>
+<string name="txtSlogan">SAVE YOUR BRAIN</string>
+<string name="txtDescription">This application allows you to disable network connections during a call and re-enable them after the call. In this way, you can save your brain (obviously, not at all) from some types of radiations.</string>
+<string name="txtHelp">Click the Menu button and choose the Settings option to configure the behaviour of the application.</string>
+<string name="refs_url">http://en.wikipedia.org/wiki/Mobile_phone_radiation_and_health</string>
+
+<string name="refs_text">More info</string>
+<string name="showrefs_question">This operation will open the browser; do you want to proceed?</string>
+<string name="showrefs_answeryes">Yes</string>
+<string name="showrefs_answerno">No</string>
+
+<string name="about_text">About</string>
+
+<string name="about_title">About Calll application</string>
+
+<string name="sendemail">Write to the developer</string>
+
+<string name="version_title">Version: </string>
+<string name="author_title">Author: </string>
+<string name="licence_text">Calll is free to download, so if you paid for it you have been scammed...</string>
+
+<string name="notification_autoboot">Calll is running</string>
+<string name="notification_active_preview">Calll is active for this call</string>
+<string name="notification_active_summary">Calll has successfully disabled any configured connection for this call</string>
+<string name="notification_finished_preview">Connections has been restored</string>
+<string name="notification_finished_summary">Connections have successfully been re-enabled by Calll</string>
+<string name="notification_none_preview">No connection has been disabled by Calll</string>
+<string name="notification_none_summary">Calll has not found any connection to close</string>
+
+<!-- Contacts -->
+
+<string name="contact_text">Contact the developer</string>
+<string name="contact_popup_title">Choose the topic</string>
+
+<!-- Preferences -->
+
+<string name="pref_maincategory">Main preferences</string>
+<string name="pref_notificationcategory">Notifications</string>
+<string name="pref_servicescategory">Services</string>
+
+<string name="pref_enableservice_title">Enable Calll</string>
+<string name="pref_enableservice_summary">Check to enable Calll service</string>
+
+<string name="pref_autoboot_title">Autoboot</string>
+<string name="pref_autoboot_summary">Automatically run Calll service at system boot</string>
+
+<string name="pref_activationtype_title">Activation type</string>
+<string name="pref_activationtype_summary">Choose the activation type</string>
+<string name="notificationtype_proximitysensor">Service will be enabled using the proximity sensor</string>
+<string name="notificationtype_answer">Service will be enabled answering the phone or calling a contact</string>
+
+<string name="pref_notificationtype_title">Notification type</string>
+<string name="pref_notificationtype_summary">Choose the notification type</string>
+<string name="notificationtype_none">No notification is configured</string>
+<string name="notificationtype_simple">System is configured to show a notification on the notification area</string>
+<string name="notificationtype_toast">System is configured to show a toast notification</string>
+
+<string name="pref_showbootnotification_title">Show boot notification</string>
+<string name="pref_showbootnotification_summary">Show a notification during autoboot</string>
+
+<string name="pref_showemptynotification_title">Notify no operation</string>
+<string name="pref_showemptynotification_summary">Check to show a notification even if no connections have been disabled</string>
+
+<string name="pref_apn_title">Disable mobile data network</string>
+<string name="pref_apn_summary">Check to disable mobile data network during a call</string>
+
+<string name="pref_viewapn_title">View APNs</string>
+<string name="pref_viewapn_summary">Click to open APNs settings for the current mobile</string>
+
+<string name="pref_wifi_title">Disable Wifi</string>
+<string name="pref_wifi_summary">Check to disable Wifi service during a call</string>
+
+<string name="pref_bt_title">Disable Bluetooth</string>
+<string name="pref_bt_summary">Check to disable Bluetooth service during a call, even if it\'s connected to a device</string>
+
+</resources>

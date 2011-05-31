@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="activationtypes">
+        <item>Sensor de proximidad</item>
+        <item>Contestador o llamada</item>
+    </string-array>
+    <string-array name="activationkeys">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

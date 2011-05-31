@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="notificationtypes">
+        <item>None</item>
+        <item>Simple notification</item>
+        <item>Toast notification</item>
+    </string-array>
+    <string-array name="notificationkeys">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

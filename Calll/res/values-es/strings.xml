@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- Main stuffs -->
+
+<string name="settings_text">Configuración</string>
+<string name="set_preferences">Configuración de Calll</string>
+<string name="txtSlogan">GUARDAR TU CEREBRO</string>
+<string name="txtDescription">Esta aplicación permite para deshabilitar las conexiones de la red durante una llamada, para volver a habilitarles cuando haya terminado. De esta forma se protegen (obviamente no todos) tu cerebro de algunos tipos de radiación.</string>
+<string name="txtHelp">Para configurar el comportamiento de la aplicación, pulse el botón de Menú y, a continuación, elija la opción de Configuración.</string>
+<string name="refs_url">http://es.wikipedia.org/wiki/Radiación_electromagnética_y_salud</string>
+
+<string name="refs_text">Información</string>
+<string name="showrefs_question">Esto abrirá el navegador; que desea ir?</string>
+<string name="showrefs_answeryes">Sì</string>
+<string name="showrefs_answerno">No</string>
+
+<string name="about_text">About</string>
+
+<string name="about_title">Información acerca de Calll</string>
+
+<string name="sendemail">Contactar con el programador</string>
+
+<string name="version_title">Versión: </string>
+<string name="author_title">Autor: </string>
+<string name="licence_text">Calll se puede descargar gratis, así que si usted pagó por ella le han estafado...</string>
+
+<string name="notification_autoboot">Calll se ejecuta</string>
+<string name="notification_active_preview">Calll está activo para esta llamada</string>
+<string name="notification_active_summary">Calll ha desactivado las conexiones correctamente</string>
+<string name="notification_finished_preview">Las conexiones se ha restablecido</string>
+<string name="notification_finished_summary">Conexiones fueron restauradas correctamente por Calll</string>
+<string name="notification_none_preview">No se ha deshabilitado ninguna conexión</string>
+<string name="notification_none_summary">Calll no ha deshabilitado ninguna conexión</string>
+
+<!-- Contacts -->
+
+<string name="contact_text">Contactar con el programador</string>
+<string name="contact_popup_title">Elegir el tema</string>
+
+<!-- Preferences -->
+
+<string name="pref_maincategory">Principales preferencias</string>
+<string name="pref_notificationcategory">Notificaciones</string>
+<string name="pref_servicescategory">Servicios</string>
+
+<string name="pref_enableservice_title">Habilitar Calll</string>
+<string name="pref_enableservice_summary">Si selecciona esta opción, el servicio está habilitado</string>
+
+<string name="pref_autoboot_title">Autoboot</string>
+<string name="pref_autoboot_summary">Ejecuta automáticamente Calll en el arranque</string>
+
+<string name="pref_activationtype_title">Activación</string>
+<string name="pref_activationtype_summary">Le permite elegir el tipo de servicio de activación</string>
+<string name="notificationtype_proximitysensor">El servicio se activa mediante el sensor de proximidad</string>
+<string name="notificationtype_answer">El servicio se activará para contestar o hacer una llamada telefónica</string>
+
+<string name="pref_notificationtype_title">Notificaciones</string>
+<string name="pref_notificationtype_summary">Le permite elegir el tipo de notificación para mostrar</string>
+<string name="notificationtype_none">Ninguna notificación</string>
+<string name="notificationtype_simple">El sistema está configurado para mostrar una notificación en el área de notificación</string>
+<string name="notificationtype_toast">El sistema está configurado para mostrar una notificación toast tipo</string>
+
+<string name="pref_showbootnotification_title">Muestra notificación de inicio</string>
+<string name="pref_showbootnotification_summary">Muestra una notificación en autoboot</string>
+
+<string name="pref_showemptynotification_title">Notificación sin efectos</string>
+<string name="pref_showemptynotification_summary">Si selecciona esta opción, se verá una notificación incluso si no hay conexión está deshabilitada</string>
+
+<string name="pref_apn_title">Deshabilita la red 3G</string>
+<string name="pref_apn_summary">Si selecciona esta opción, se deshabilitará la red móvil en conversación</string>
+
+<string name="pref_viewapn_title">Mostrar APN</string>
+<string name="pref_viewapn_summary">Para abrir la configuración del sistema sobre la APN</string>
+
+<string name="pref_wifi_title">Desactivar Wifi</string>
+<string name="pref_wifi_summary">Si selecciona esta opción, las conexiones WiFi se desactivan en conversación</string>
+
+<string name="pref_bt_title">Desactivar Bluetooth</string>
+<string name="pref_bt_summary">Si selecciona esta opción, las conexiones de Bluetooth están deshabilitadas en conversación, aunque sea en uso</string>
+
+</resources>

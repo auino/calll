@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contacttypes">
+        <item>Ask a question</item>
+        <item>Report a bug</item>
+        <item>Help in translation</item>
+        <item>Become a tester</item>
+        <item>Other...</item>
+    </string-array>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+                android:title="@string/pref_maincategory">
+                <CheckBoxPreference
+                        android:title="@string/pref_enableservice_title"
+                        android:defaultValue="true"
+                        android:summary="@string/pref_enableservice_summary"
+                        android:key="enableService" />
+                <CheckBoxPreference
+                        android:title="@string/pref_autoboot_title"
+                        android:dependency="enableService"
+                        android:defaultValue="true"
+                        android:summary="@string/pref_autoboot_summary"
+                        android:key="autoboot" />
+                <ListPreference
+                        android:title="@string/pref_activationtype_title"
+                        android:dependency="enableService"
+                        android:defaultValue="1"
+                        android:summary="@string/pref_activationtype_summary"
+                        android:key="activationType"
+                        android:entries="@array/activationtypes"
+           				android:entryValues="@array/activationkeys" />
+           		<!--
+                <Preference
+                		android:title="@string/pref_viewapn_title"
+                		android:summary="@string/pref_viewapn_summary"
+                		android:key="viewApn" />
+                -->
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="@string/pref_notificationcategory">
+                <ListPreference
+                        android:title="@string/pref_notificationtype_title"
+                        android:dependency="enableService"
+                        android:defaultValue="3"
+                        android:summary="@string/pref_notificationtype_summary"
+                        android:key="notificationType"
+                        android:entries="@array/notificationtypes"
+           				android:entryValues="@array/notificationkeys" />
+                <CheckBoxPreference
+                        android:title="@string/pref_showbootnotification_title"
+                        android:dependency="enableService"
+                        android:defaultValue="false"
+                        android:summary="@string/pref_showbootnotification_summary"
+                        android:key="showBootNotification" />
+           		<CheckBoxPreference
+                        android:title="@string/pref_showemptynotification_title"
+                        android:dependency="enableService"
+                        android:defaultValue="false"
+                        android:summary="@string/pref_showemptynotification_summary"
+                        android:key="showEmptyNotification" />
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="@string/pref_servicescategory">
+                <CheckBoxPreference
+                        android:title="@string/pref_apn_title"
+                        android:dependency="enableService"
+                        android:defaultValue="false"
+                        android:enabled="true"
+                        android:summary="@string/pref_apn_summary"
+                        android:key="apn" />
+                <CheckBoxPreference
+                        android:title="@string/pref_wifi_title"
+                        android:dependency="enableService"
+                        android:defaultValue="true"
+                        android:summary="@string/pref_wifi_summary"
+                        android:key="wifi" />
+                <CheckBoxPreference
+                        android:title="@string/pref_bt_title"
+                        android:dependency="enableService"
+                        android:defaultValue="true"
+                        android:summary="@string/pref_bt_summary"
+                        android:key="bt" />
+        </PreferenceCategory>
+</PreferenceScreen>

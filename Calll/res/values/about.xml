@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+<string name="app_name">Calll</string>
+<string name="app_version">0.82</string>
+<string name="author">Enrico Cambiaso</string>
+<string name="author_email">enrico.cambiaso@gmail.com</string>
+<string name="betastring">beta</string>
+
+<string name="contact_write_subject">[Calll] Hi...</string>
+<string name="contact_write_content"></string>
+
+<string name="contact_ask_subject">[Calll] Question about Calll</string>
+<string name="contact_ask_content"></string>
+
+<string name="contact_bug_subject">[Calll] Bug report</string>
+<string name="contact_bug_content"></string>
+
+<string name="contact_tester_subject">[Calll] Become a tester</string>
+<string name="contact_tester_content"></string>
+
+<string name="contact_helpintranslation_subject">[Calll] I\'d like to help in translation</string>
+<string name="contact_helpintranslation_content"></string>
+
+</resources>
