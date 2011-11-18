@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="cambiaso/callll/CallListener.java|cambiaso/callll/OutGoing.java|cambiaso/callll/OnPhoneStateChangeListener.java|cambiaso/callll/AuinoPhoneCallListener.java|cambiaso/calll/listeners/EarphonesManager.java|cambiaso/calll/services/apn/subservices/OLD_CustomizedApnService.java|cambiaso/calll/services/apn/subservices/ApndroidService.java|cambiaso/calll/services/apn/subservices/CustomizedApnService.java|cambiaso/calll/services/apn/subservices/|cambiaso/calll/services/apnOLD/|cambiaso/calll/services/apn/ApnManager.java|cambiaso/calll/services/apn/ApnServiceOLD.java" kind="src" path="src"/>
+	<classpathentry excluding="cambiaso/callll/CallListener.java|cambiaso/callll/OutGoing.java|cambiaso/callll/OnPhoneStateChangeListener.java|cambiaso/callll/AuinoPhoneCallListener.java|cambiaso/calll/listeners/EarphonesManager.java|cambiaso/calll/services/apn/subservices/OLD_CustomizedApnService.java|cambiaso/calll/services/apn/subservices/ApndroidService.java|cambiaso/calll/services/apn/subservices/CustomizedApnService.java|cambiaso/calll/services/apn/subservices/|cambiaso/calll/services/apnOLD/|cambiaso/calll/services/apn/ApnManager.java|cambiaso/calll/services/apn/ApnServiceOLD.java|cambiaso/calll/services/apn/ApnDao.java" kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry kind="output" path="bin"/>

@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="20px"
+    android:padding="20dp"
 	android:layout_gravity="center_horizontal"
 	android:gravity="center_horizontal"
     android:background="@drawable/main_background">
@@ -19,7 +19,7 @@
 		android:layout_height="wrap_content"
 		android:layout_gravity="center_horizontal"
 		android:gravity="center_horizontal"
-		android:textSize="12sp"
+		android:textSize="12dp"
 		android:textColor="#FAFAFA"
 	/>
 	<TextView android:text="@+string/txtSlogan"
@@ -28,9 +28,9 @@
 		android:layout_height="wrap_content"
 		android:layout_gravity="center_horizontal"
 		android:gravity="center_horizontal"
-		android:textSize="20sp"
+		android:textSize="20dp"
 		android:textStyle="bold"
-		android:layout_marginTop="10sp"
+		android:layout_marginTop="10dp"
 		android:textColor="#FFFFFF"
 	/>
 	<TextView
@@ -40,7 +40,7 @@
 		android:layout_height="wrap_content"
 		android:layout_gravity="center_horizontal"
 		android:gravity="center_horizontal"
-		android:textSize="14sp"
+		android:textSize="14dp"
 		android:textColor="#FFFFFF"
 	/>
 	<TextView
@@ -48,10 +48,10 @@
 		android:id="@+id/txtHelp"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="20px"
+		android:layout_marginTop="20dp"
 		android:layout_gravity="center_horizontal"
 		android:gravity="center_horizontal"
-		android:textSize="14sp"
+		android:textSize="14dp"
 		android:textStyle="italic"
 		android:textColor="#F0F0F0"
 	/>
