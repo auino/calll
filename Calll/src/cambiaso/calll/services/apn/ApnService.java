@@ -1,8 +1,8 @@
 package cambiaso.calll.services.apn;
 
-import android.content.Context;
 import cambiaso.calll.services.IConnectionService;
 import cambiaso.calll.utils.Debug;
+import android.content.Context;
 
 // http://forum.xda-developers.com/archive/index.php/t-899515.html
 public class ApnService implements IConnectionService {

@@ -57,9 +57,10 @@
                         android:title="@string/pref_apn_title"
                         android:dependency="enableService"
                         android:defaultValue="false"
-                        android:enabled="true"
+                        android:enabled="false"
+                        android:value="false"
                         android:summary="@string/pref_apn_summary"
-                        android:key="apn" />
+                        android:key="apn" /> <!-- Disabled and not checked -->
                 <CheckBoxPreference
                         android:title="@string/pref_wifi_title"
                         android:dependency="enableService"

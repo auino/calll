@@ -44,7 +44,7 @@ public class CalllManager {
 		connectionServices = new LinkedList<IConnectionService>();
 		connectionServices.add(new WifiService(ctx));
 		connectionServices.add(new BluetoothService(ctx));
-	    connectionServices.add(new ApnService(ctx));
+	    //connectionServices.add(new ApnService(ctx));
 		Debug.println("CalllManager constructor: connectionService.size="+connectionServices.size());
 	}
 	

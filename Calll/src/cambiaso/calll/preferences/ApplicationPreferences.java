@@ -177,10 +177,12 @@ public class ApplicationPreferences extends PreferenceActivity {
 	}
 	
 	public static boolean isApnEnabled(Context ctx) {
-		//return false; // TODO: To disable
+		return false; // TODO: To disable
+		/*
 		loadPrefs(ctx);
 		apn = prefs.getBoolean(apnKey, DEFAULT_APN);
         return apn;
+        */
 	}
 	
 	public static boolean isWifiEnabled(Context ctx) {
