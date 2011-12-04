@@ -5,7 +5,12 @@ import cambiaso.calll.preferences.ApplicationPreferences;
 import cambiaso.calll.services.IConnectionService;
 import cambiaso.calll.utils.Debug;
 import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothClass;
+import android.bluetooth.BluetoothDevice;
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 
 // requires API v.5 or greater...
 public class BluetoothService implements IConnectionService {
@@ -37,6 +42,7 @@ public class BluetoothService implements IConnectionService {
 	@Override
 	public boolean disable(Context ctx) {
 		if(!ApplicationPreferences.isBluetoothEnabled(ctx)) return false;
+		
 		switch (getBtMng().getState()) {
 		case BluetoothAdapter.STATE_OFF:
 			Debug.println("Bluetooth state is off...");
@@ -64,6 +70,9 @@ public class BluetoothService implements IConnectionService {
 			return false;
 		}
 		*/
+		
+		if(isBluetoothDeviceAttached(ctx)) return false;
+		
 		Debug.println("Disabling Bluetooth...");
 		try {
 			getBtMng().disable();
@@ -75,6 +84,41 @@ public class BluetoothService implements IConnectionService {
 		Debug.println("Bluetooth successfully disabled...");
 		return true;
 	}
+	
+	private boolean isBluetoothDeviceAttached(Context ctx) {
+		/*
+		IntentFilter filter1 = new IntentFilter(BluetoothDevice.ACTION_ACL_CONNECTED);
+		ctx.registerReceiver(mReceiver, filter1);
+		*/
+		return false;
+	}
+	
+	/*
+	//The BroadcastReceiver that listens for bluetooth broadcasts
+	private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
+		@Override
+		public void onReceive(Context ctx, Intent intent) {
+	        String action = intent.getAction();
+	        BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+
+	        if (BluetoothDevice.ACTION_FOUND.equals(action)) {
+	           //Device found
+	        }
+	        else if (BluetoothAdapter.ACTION_ACL_CONNECTED.equals(action)) {
+	           //Device is now connected
+	        }
+	        else if (BluetoothAdapter.ACTION_DISCOVERY_FINISHED.equals(action)) {
+	           //Done searching
+	        }
+	        else if (BluetoothAdapter.ACTION_ACL_DISCONNECT_REQUESTED.equals(action)) {
+	           //Device is about to disconnect
+	        }
+	        else if (BluetoothAdapter.ACTION_ACL_DISCONNECTED.equals(action)) {
+	           //Device has disconnected
+	        }           
+		}
+	};
+	*/
 	
 	@Override
 	public boolean enable() {
