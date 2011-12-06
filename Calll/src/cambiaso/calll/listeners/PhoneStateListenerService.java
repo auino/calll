@@ -16,7 +16,7 @@ public class PhoneStateListenerService extends PhoneStateListener {
 		context = ctx;
 	}
 	
-	public void onCallStateChanged(int state,String incomingNumber){
+	public void onCallStateChanged(int state, String incomingNumber){
 		switch(state) {
 		case TelephonyManager.CALL_STATE_RINGING:
 			Debug.println("Ringing...");

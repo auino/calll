@@ -7,7 +7,8 @@ import java.util.concurrent.locks.ReentrantLock;
 import android.content.Context;
 import android.hardware.SensorManager;
 import cambiaso.calll.R;
-import cambiaso.calll.listeners.ProximityListener;
+import cambiaso.calll.listeners.AProximityListener;
+import cambiaso.calll.listeners.ProximityListenerActivator;
 import cambiaso.calll.notifications.NotificationService;
 import cambiaso.calll.notifications.ToastNotificationService;
 import cambiaso.calll.preferences.ActivationType;
@@ -16,6 +17,7 @@ import cambiaso.calll.preferences.NotificationType;
 import cambiaso.calll.services.IConnectionService;
 import cambiaso.calll.services.apn.ApnService;
 import cambiaso.calll.services.bluetooth.BluetoothService;
+import cambiaso.calll.services.proximityalert.ProximityAlertService;
 import cambiaso.calll.services.wifi.WifiService;
 import cambiaso.calll.utils.Debug;
 
@@ -24,7 +26,7 @@ public class CalllManager {
 	
 	private Context context;
 	
-	private ProximityListener proximityListener = null;
+	private AProximityListener proximityListener = null;
 	
 	private List<IConnectionService> connectionServices = null;
 	
@@ -42,6 +44,7 @@ public class CalllManager {
 		Debug.println("CalllManager constructor");
 		context = ctx;
 		connectionServices = new LinkedList<IConnectionService>();
+		connectionServices.add(new ProximityAlertService(ctx));
 		connectionServices.add(new WifiService(ctx));
 		connectionServices.add(new BluetoothService(ctx));
 	    //connectionServices.add(new ApnService(ctx));
@@ -80,7 +83,7 @@ public class CalllManager {
 				// register proximity listener
 				Debug.println("Registering proximity listener");
 				if(proximityListener != null) proximityListener.unregisterListener();
-				proximityListener = new ProximityListener(context, (SensorManager) context.getSystemService(Context.SENSOR_SERVICE));
+				proximityListener = new ProximityListenerActivator(context, (SensorManager) context.getSystemService(Context.SENSOR_SERVICE));
 				proximityListener.registerListener();
 			}
 		}
